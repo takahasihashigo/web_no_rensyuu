@@ -23,3 +23,7 @@ body {
 color: black !important;
 って感じ！
 */
+
+.kuro .navbar-light {
+    color: black !important;
+}
