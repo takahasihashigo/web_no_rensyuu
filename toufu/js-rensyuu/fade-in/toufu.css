@@ -39,16 +39,16 @@ kuroの子孫要素のnavbar-lightのみ色を制限
 .fadein-area {
     /* 最初は見えなくしておく */
     opacity: 0;
-    /* 右から左にフワッと出るようにあらかじめ少し右にずらして配置 */
+    /* 下から上にフワッと出るようにあらかじめ少し右にずらして配置 */
     transform: translate(0px, 50px);
-    /* どれくらいの時間でフェードインさせるか */
-    transition-duration: 1000ms;
-    /* 何をフェードインさせるか */
-    transition-property: opacity, transform;
 }
 
 /* スクロールした際にフェードイン */
 .add-fadein {
     opacity: 1;
     transform: translate(0, 0);
+    /* どれくらいの時間でフェードインさせるか */
+    transition-duration: 1000ms;
+    /* 何をフェードインさせるか */
+    transition-property: opacity, transform;
 }
