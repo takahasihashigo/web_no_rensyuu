@@ -1,0 +1,30 @@
+body {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+    background-color: rgba(232, 225, 211, 1); 
+    color: #333333;
+    /*行間のスペースを制御*/
+    line-height: 240%;
+}
+
+/* ナビゲーションの背景の色を設定 */
+.bg-white {
+    background-color: rgba(232, 225, 211, 0.5) !important;
+}
+
+/* ナビゲーションの文字の色を設定 */
+.navbar-light {
+    color: white !important;
+}
+
+/* 
+スクロールしたら文字の色を変えよう！
+color: black !important;
+って感じ！
+kuroの子孫要素のnavbar-lightのみ色を制限
+*/
+
+.kuro .navbar-light {
+    color: black !important;
+}
