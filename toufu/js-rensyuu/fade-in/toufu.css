@@ -28,3 +28,27 @@ kuroの子孫要素のnavbar-lightのみ色を制限
 .kuro .navbar-light {
     color: black !important;
 }
+
+
+/* 文字のサイズ */
+.moji {
+    font-weight: bold;
+}
+
+/* 文字を消しておく */
+.fadein-area {
+    /* 最初は見えなくしておく */
+    opacity: 0;
+    /* 右から左にフワッと出るようにあらかじめ少し右にずらして配置 */
+    transform: translate(0px, 50px);
+    /* どれくらいの時間でフェードインさせるか */
+    transition-duration: 1000ms;
+    /* 何をフェードインさせるか */
+    transition-property: opacity, transform;
+}
+
+/* スクロールした際にフェードイン */
+.add-fadein {
+    opacity: 1;
+    transform: translate(0, 0);
+}
