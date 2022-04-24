@@ -40,7 +40,7 @@ kuroの子孫要素のnavbar-lightのみ色を制限
     /* 最初は見えなくしておく */
     opacity: 0;
     /* 下から上にフワッと出るようにあらかじめ少し下にずらして配置 */
-    transform: translate(0px, 50px);
+    transform: translate(50px, 0px);
 }
 
 /* スクロールした際にフェードイン */
@@ -51,4 +51,10 @@ kuroの子孫要素のnavbar-lightのみ色を制限
     transition-duration: 1000ms;
     /* 何をフェードインさせるか */
     transition-property: opacity, transform;
+}
+
+/* transformではみ出た余白をhiddenで隠してる！
+めっちゃ大事！ */
+.toufu-wrap {
+    overflow: hidden;
 }
